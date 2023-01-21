@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tip Records | Since 1994 </title>
+    <link  rel="stylesheet" href="css/style.css">
+    <script defer src="js/app.js" ></script>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav position__botton ">
+
+            <div class="header__logo">
+                <img class="header__logoimg" src="assets/shivaTopLogo.png" alt="Logo" loading="lazy" decoding="async">
+            </div>
+            
+
+            <ul class="header__ul">
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu " title="Home" href="index.html">Home</a> 
+                    </div>
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu " title="Tip" href="label.html">T.i.p</a> 
+                    </div>
+                </li>
+
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu header__menuactivo" title="Artists" href="#">
+                            Artists
+                        </a> 
+
+                        <ul class="header__submenu header__submenuactivo"> 
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Raja Ram"  href="#">
+                                    Raja Ram
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Lucas and Supermodule"  href="#">
+                                    Lucas / Supermodule
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="1200 Mics"  href="#"> 
+                                    1200 Mics
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Mandalbrot"  href="#"> 
+                                    Mandalbrot
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Astral-Projection"  href="#"> 
+                                    Astral-Projection
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Outsiders"  href="#"> 
+                                    Outsiders
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Iridian"  href="#"> 
+                                    Iridian
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Logic Bomb"  href="#"> 
+                                    Logic Bomb
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="The Zap!"  href="#"> 
+                                    The zap!
+                                </a> 
+                            </li>
+                            <li class="headersubemenu__li" > 
+                                <a class="headersubmenu__a" title="Brahma!"  href="#"> 
+                                    Brahma!
+                                </a> 
+                            </li>
+                        </ul>
+                    </div> 
+
+
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu" title="Releases" href="releases.html">
+                            Releases
+                        </a>
+                    </div>                    
+
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu" title="Media" href="#">
+                            Media
+                        </a> 
+                    </div>                    
+
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu" title="Contact" href="#">
+                            Contact
+                        </a> 
+                    </div>                    
+
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu" title="Stores" href="#">Stores</a> 
+                    </div>                    
+
+                </li>
+
+                <li class="header__li" > 
+                    <div class="header__bg">  
+                        <a class="header__menu" title="BandCamp" href="#">Bandcamp</a> 
+                    </div>                    
+
+                </li>
+
+            </ul>
+
+
+            
+                <button class="btn__movil">
+                    <span class="header__menumovil">
+                        <span class="header__menumovilline1  lines__mmovil" ></span>
+                        <span class="header__menumovilline2  lines__mmovil" ></span>
+                        <span class="header__menumovilline3  lines__mmovil" ></span>
+                    </span>
+                </button>
+                
+                
+            <div class="conteiner__menumovilall">
+                <div class="menumovil__all">
+                    <div class="menumovil__cont ">
+                        <ul class="menumovil__ul">
+                            <li class="menumovil__li">
+                                <a class="menumovil__a" title="Home" href="index.html">Home</a>
+                            </li>
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="Tip" href="label.html">T.i.p</a>
+                            </li>
+                            <li class="menumovil__li open__artist" >
+                                <a class="menumovil__a" title="Artists" href="#">Artists</a>
+                                <span class="arrow__artists"> 
+                                <img src="assets/arrow.svg" alt="arrow" loading="lazy" decoding="async" title="Home">
+                                </span>
+    
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="Releases" href="releases.html">Releases</a>
+                            </li>
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="Media" href="#">Media</a>
+                            </li>
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="Contact" href="#">Contact</a>
+                            </li>
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="Stores" href="#">Stores</a>
+                            </li>
+                            <li class="menumovil__li" >
+                                <a class="menumovil__a" title="BandCamp" href="#">BandCamp</a>
+                            </li>
+                        </ul>
+    
+                        
+                    </div>
+
+
+                    <div class="submenumovil__artists ">
+
+                        <button class="arrow__leftback">
+                            <img class="arrow__backmenuimg" src="assets/arrow.svg" alt="Back menu" loading="lazy" decoding="async">
+                        </button>
+    
+                        <ul class="submenumovil__ul">
+                            
+                            
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Raja.jpg" alt="Raja-Ram" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Lucas.jpg" alt="Lucas / Supermodule" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/1200.jpg" alt="1200 Mics" loading="lazy" decoding="async">
+    
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Mandelbrot.jpg" alt="Mandelbrot" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Chicago.jpg" alt="DjChicago" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Astral.jpg" alt="Astral Projection" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Outsiders.jpg" alt="Outsiders" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/iridian.jpg" alt="Iridian" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Logic.jpeg" alt="Logic Bomb" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Zap.webp" alt="The Zap!" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                            <li class="submenumovil__li" >
+                                <a class="submenumovil__a" href="#">
+                                    <img src="assets/Brahma.jpg" alt="Brahma!" loading="lazy" decoding="async">
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="banner__conteiner">
+
+            <div class="banner__contimg ">
+                <img class="banner__img" src="./assets/tomatop.png" alt="Logo Tip" loading="lazy" decoding="async">
+                <button class="btn__conteiner">
+                    <span class="btn__span">
+                        NEW BANDCAMP STORE - CLICK HERE
+                    </span>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="conteiner__slider">
+            <div class="slider__all" >
+                <div class="slider__info">
+
+                    <div class="slider__title">
+                        <span class="slider__span">Artists</span>
+    
+                    </div>
+                    
+                    <span class="slider__arrow">
+                        
+                        <button class=" slider__arrowsettings arrow__left">
+                            <img class="" src="assets/arrow.svg" alt="Back menu" loading="lazy" decoding="async">
+                        </button>
+                        
+                        <button class=" slider__arrowsettings arrow__right">
+                            <img class="" src="assets/arrow.svg" alt="Back menu" loading="lazy" decoding="async">
+                        </button>
+                        
+                    </span>
+                    
+                    <div class="slider__contenedor">
+                        <div class="slider__contul">
+
+                            <ul class="slider__ul">
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Raja Ram" href="#">
+                                        <img class="slider__img" src="assets/rajaram-1.png" alt="Raja Ram" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Lucas and Supermodule" href="#">
+                                        <img class="slider__img" src="assets/lucas-1.png" alt="Lucas Supermodule" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="1200 Mics" href="#">
+                                        <img class="slider__img" src="assets/1200-1.png" alt="1200 Mics" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="DjChicago" href="#">
+                                        <img class="slider__img" src="assets/chiki-1.png" alt="DjChicago" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="The Zap!" href="#">
+                                        <img class="slider__img" src="assets/zap-1.png" alt="The Zap!" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Astral Projection" href="#">
+                                        <img class="slider__img" src="assets/astral-1.png" alt="Astral Projection" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Logic Bomb" href="#">
+                                        <img class="slider__img" src="assets/lgoic-1.png" alt="Logic Bomb" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Brahma" href="#">
+                                        <img class="slider__img" src="assets/brahma-1.png" alt="Brahma" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                <li class="slider__li ">
+                                    <a class="slider__a" title="Outsiders" href="#">
+                                        <img class="slider__img" src="assets/OUT-1.png" alt="Outsiders" loading="lazy" decoding="async">
+                                    </a>
+                                </li>
+                                
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="latest">
+            <div class="latest__width">
+            <div class="latest__title">
+                <span class="latest__span">Latest</span>
+            </div>
+            <div class="latest__cont">
+                <ul class="latest__ul">
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/iridianlatests.jpg" alt="Iridian">
+                            <div class="latest__info">
+                                <span class="latest__name">Iridian</span>
+                                <span class="latest__ep">Double Dose <span class="latest__epcolor">Ep</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/astral-projection.jpg" loading="lazy" decoding="async" alt="Astral Projection & Oforia">
+                            <div class="latest__info">
+                                <span class="latest__name">Astral Projection & Oforia</span>
+                                <span class="latest__ep">The Highest Mountain <span class="latest__epcolor">Single</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/hallucinogen.jpg" loading="lazy" decoding="async" alt="Hallucinogen">
+                            <div class="latest__info">
+                                <span class="latest__name">Hallucinogen</span>
+                                <span class="latest__ep">Shamanix – Domestic & Spacecat Rmx <span class="latest__epcolor">Single</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/koxbox.jpg" loading="lazy" decoding="async" alt="Koxbox">
+                            <div class="latest__info">
+                                <span class="latest__name">Koxbox</span>
+                                <span class="latest__ep">Outside of Time  <span class="latest__epcolor">Ep</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/Lucas.jpg" loading="lazy" decoding="async" alt="Lucas O'brien">
+                            <div class="latest__info">
+                                <span class="latest__name">Lucas O'brien</span>
+                                <span class="latest__ep">Now and Zen - Mandelbrot Rmx <span class="latest__epcolor">Single</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/iri2.jpg" loading="lazy" decoding="async" alt="Iridian">
+                            <div class="latest__info">
+                                <span class="latest__name">Iridian</span>
+                                <span class="latest__ep">Into The Vortex <span class="latest__epcolor">Album</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/infinity.jpg" loading="lazy" decoding="async" alt="The Infinity Project">
+                            <div class="latest__info">
+                                <span class="latest__name">The Infinity Project</span>
+                                <span class="latest__ep">Feeling Very Weird - Hypnoshock Rmx <span class="latest__epcolor">Single</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="latest__li" >
+                        <a class="latest__a" href="#">
+                            <img class="latest__img" src="assets/burnandnoise.jpg" loading="lazy" decoding="async" alt="">
+                            <div class="latest__info">
+                                <span class="latest__name">Burn In Noise & Gms</span>
+                                <span class="latest__ep">Mad Noise <span class="latest__epcolor">Single</span></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="latests__btn">
+                    <button class="  btn__conteiner">
+                        <span class="btn__span">
+                            VIEW ALL RELEASES
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="headplayer__cont" > 
+            <div class="headplayer__img">
+                <div class="headplayer__bgimg"></div>
+            </div>
+        </div>
+        <div class="player__cont">
+            <div class="player__width">
+                <div class="player__title">
+                    <span class="player__span">Listen!</span>
+
+                </div>
+                <div class="player__music">
+                <iframe title="Music Electronic SoundCloud"  loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/249661" width="100" height="450" >
+                </iframe>
+
+            <div class="player__btn">
+                <button class="btn__conteiner">
+                    <span class="btn__span">
+                        FOLLOW TIP ON SOUNDCLOUD
+                    </span>
+    
+                </button>
+            </div>
+
+            </div>
+            </div>
+        </div>
+        <div class="decoration__cont">
+            <div class="decoration__img">
+                <div class="decoration__bgimg"></div>
+            </div>
+        </div>
+
+        <div class="promo__cont">
+            <div class="promo__width">
+
+                <div class="promo__title">
+                    <span class="promo__spantitle">Watch!</span>
+                    <span class="promo__spaninfo">Promo clips, interviews, live shootings,just press play</span>
+                </div>
+                
+                <div class="promo__video">
+                    <iframe  loading="lazy" class="promo__youtube"  width="560" height="515" src="https://www.youtube.com/embed/nIyrgr-hPSY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="promo__btn">
+                    <button class="btn__conteiner">
+                        <span class="btn__span ">
+                            SUBSCRIBE TO YOUTUBE CHANNEL
+                        </span>
+        
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bannertip">
+            <div class="bannerti__cont">
+                <img class="bannerti__img" src="assets/banner.png" alt="">
+            </div>
+        </div>
+
+        <div class="bannerface">
+            <div class="bannerface__img">
+                <div class="bannerface__bgimg"></div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer__cont">
+            <div class="footer__img">
+                <img class="footer__banner" src="assets/banner.png" alt="">
+                <div class="footer__titlecont">
+                    <div class="footer__ufo">
+                        <div class="footer__bgufo"></div>
+                    </div>
+                    <p class="footer__title"> © Tip Records/Tip World. 1994-2023</p>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
