@@ -1308,17 +1308,281 @@ body {
 
 }
 
+
+.contact__title{
+    width: 50%;
+    text-align: center;
+    font-family: var(--grotesque);
+    font-size: clamp(1.2em, 10vw,1em);
+    padding: 4em 0em 3em 0em;
+    line-height: 1.4;
+    color: var(--gris);
+}
+
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/difondoDos.svg);
+    background-size: 120em;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.form::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+.form__cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+label{
+    width: 190%;
+    display: flex;
+    justify-content: flex-start;
+    
+   
+}
+::placeholder{
+    font-family: 'aileron-regular';
+    opacity: .8;
+    
+}
+.form__titles{
+    width: 190%;
+    padding: .8em;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    resize: vertical;
+    background-color: #131313;
+    font-family: 'aileron-regular';
+}
+.form__titles:focus{
+    font-family: 'aileron-regular';
+
+}
+.form__titles:not(:last-child){
+    margin-bottom: 1.8em;
+}
+.form__btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__btn{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    background: var(--orange);
+    padding: 1em 2em 1em 2em;
+    border-radius: .5em;
+    box-shadow: .5em .5em var(--petrol);
+    overflow: hidden;
+    font-family: 'aileron';
+    font-size: clamp(1em,20vw,1.1em);
+
+}
+.form__btn:hover.form__btn::after{
+    transform: translateY(0%);
+
+}
+.form__btn::after{
+    content:"";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: .5em;
+    background: var(--yellow);
+    box-shadow: .5em .5em var(--petrol);
+    transform: translateY(-120%);
+    transition: all .3s ease;
+
+}
+
+
+.talents__cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6em 0em 6em 0em;
+}
+.contact__text{
+    font-family: 'aileron-regular';
+    line-height: 1.4;
+    text-align: center;
+    font-size: clamp(1.5em, 20vw, .8em);
+    padding: 0em 0em 2em 0em;
+    color: var(--gris);
+    text-transform: uppercase;
+}
+.contact__imgface{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(../assets/shiva44.png);
+    background-size: 20em;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+.talents__ul{
+
+}
+.talents__li{
+    text-align: center;
+    font-family: var(--grotesque);
+    margin-top: .8em;
+}
+.talents__a{
+    position: relative;
+    color: var(--gris);
+}
+.talents__a::before{
+    content: "";
+    position: absolute;
+    bottom: -.2em;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gris);
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s ease;
+
+}
+.talents__a:hover.talents__a::before{
+    transform: scale(1);
+    transform-origin: left;
+
+}
+
+
+.stores{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stores__h2{
+    font-family: var(--grotesque);
+    font-size: clamp(1.4em,20vw,2em);
+    padding: 2em 0em 2em 0em;
+}
+.stores__ulcont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stores__ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3em;
+}
+.stores__ul::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.133);
+    z-index: 0;
+
+}
+
+.stores__li{
+    width: 20%;
+    position: relative;
+    z-index: 2;
+    
+}
+.stores__li:not(:last-child){
+    margin-bottom: 3.5em;
+}
+.stores__a{
+
+}
+.stores__img{
+
+}
+
+
+.categoria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categoria__h2{
+
+}
+.categoria__ulcont{
+
+}
+.categoria__ul{
+
+}
+.categoria__li{
+
+}
+.categoria__a{
+
+}
+.categoria__img{
+
+}
+.categoria__p{
+
+}
+
+
+
 /* FINAL RELEASES TIP */
 
 /* MEDIA QUERYS START */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1100px){
         /* HEAD RELEASES */
+        
+        .contact__title{
+            width: 90%;
+            font-size: clamp(.8em, 10vw,1em);
+        }
+
+        .talents__cont{
+            width: 90%;
+            line-height: 1.8;
+        }
+        /* FOOTER RELEASES */
 
         
-        
-        
-        
-        /* FOOTER RELEASES */
 }
 
 
@@ -1438,7 +1702,16 @@ body {
         font-size: clamp(.5em, 20vw, 1.8em);
         line-height: 1.5;
     }
+    .form{
+        background-image: none;
+    }
+    .contact__title{
+
+        font-size:clamp(1em, 20vw, 1em);
+        line-height: 1.8;
+    }
     
+
 }
 
 @media screen and (max-width:840px) {
@@ -1545,6 +1818,9 @@ body {
     
     }
     
+    .contact__text{
+        font-size: clamp(1.2em, 20vw, .8em);
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1581,6 +1857,26 @@ body {
         .descarga__a::before{
             background-color: var(--yellow);
             bottom: 1em;
+        }
+        label{
+            width: 150%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .form__titles{
+            width: 150%;
+            padding: .8em;
+            border: 1px solid #ccc;
+            border-radius: .5em;
+            resize: vertical;
+        }
+
+        .form__btn{
+            width: 80%;
+        }
+
+        .contact__imgface{
+            background-size: 22em;
         }
 }
 
@@ -1632,5 +1928,19 @@ body {
         padding: 5em 0em 5em 0em;
     }
 
-
+    label{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .form__titles{
+        width: 100%;
+        padding: .8em;
+        border: 1px solid #ccc;
+        border-radius: .5em;
+        resize: vertical;
+    }
+    .contact__imgface{
+        background-size: 14em;
+    }
 }
